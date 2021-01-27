@@ -1,0 +1,153 @@
+{
+  "id": "d4603374-210d-454e-ac0f-ecc3e32f9dd1",
+  "version": "2.0",
+  "name": "ISPW Project",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "c8eb6e36-0190-4e50-a15c-5c0af6aea023",
+    "name": "Pica",
+    "commands": [{
+      "id": "48c99fb0-c8ca-4a95-a083-ca59989121a7",
+      "comment": "",
+      "command": "open",
+      "target": "/Cinefy/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9e7234a-d3f0-46db-9db8-2edba60242e7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1480x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ed9cab3-8b52-4184-9684-da134f6a7359",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b348b0ea-7d5d-4e34-8a62-00b1f5fa8470",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "b1f49dbd-88ca-40f4-973a-075182ad80ad",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "511b419e-0241-45cb-8ff3-60db7ad9013d",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "0c63caf4-9cf6-49a3-8d11-98e6a9a36547",
+      "comment": "",
+      "command": "click",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["name=login", "name"],
+        ["css=#login", "css:finder"],
+        ["xpath=//input[@id='login']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f35a92d7-3374-4ca3-8279-1a0859a6ef6b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.login",
+      "targets": [
+        ["css=.login", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": "Login"
+    }]
+  }, {
+    "id": "b4a23fbe-8270-445a-aaa4-6a2b8734acad",
+    "name": "Onorati",
+    "commands": [{
+      "id": "52318256-c274-4580-aa66-7decd97a2dde",
+      "comment": "",
+      "command": "open",
+      "target": "/Cinefy/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "77c07b70-e2d4-484d-9fe8-acb57d0df459",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1480x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98b5417b-32ec-4a22-8e18-b7b89f8747ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["name=login", "name"],
+        ["css=#login", "css:finder"],
+        ["xpath=//input[@id='login']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2635f0a2-33cb-4f28-a865-b0e341f4380c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h6",
+      "targets": [
+        ["css=h6", "css:finder"],
+        ["xpath=//h6", "xpath:position"],
+        ["xpath=//h6[contains(.,'This field cannot be empty')]", "xpath:innerText"]
+      ],
+      "value": "This field cannot be empty"
+    }]
+  }],
+  "suites": [{
+    "id": "65182306-cfad-40bf-8597-cb702eef1b33",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c8eb6e36-0190-4e50-a15c-5c0af6aea023"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
